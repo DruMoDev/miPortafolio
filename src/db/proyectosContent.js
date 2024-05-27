@@ -5,7 +5,7 @@ export const proyectosContent = [
       "TaskPlanner es una herramienta integral diseñada para simplificar la gestión de proyectos y facilitar la colaboración. Permite a los usuarios crear proyectos, asignar tareas, establecer plazos, realizar un seguimiento del progreso y comunicarse eficientemente, todo desde una plataforma centralizada. Ideal para equipos de cualquier tamaño, TaskPlanner optimiza la coordinación y maximiza la productividad.",
     img: "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592708/Portafolio/img_taskplanner_rfekdf.png",
     url: "https://task-planner-dru.vercel.app/",
-    tecnologias: ["Express", "NodeJs", "MongoDB", "Tailwind"],
+    tecnologias: ["ExpressJs", "NodeJs", "MongoDB", "Tailwind", "Vite"],
     gitUrl: "https://github.com/DruMoDev/TaskPlanner_Frontend",
     id: 6,
     extra:
@@ -53,7 +53,7 @@ export const proyectosContent = [
     gitUrl:
       "https://github.com/DruMoDev/Proyectos_Propios_ReactJs/tree/main/PROYECTOS/09-search-photo-app",
     id: 4,
-    tecnologias: ["Vite", "Tailwind", "API"],
+    tecnologias: ["Vite", "Tailwind", "API REST"],
   },
   {
     titulo: "Cotizador de Criptomonedas",
@@ -64,6 +64,6 @@ export const proyectosContent = [
     gitUrl:
       "https://github.com/DruMoDev/Proyectos_Propios_ReactJs/tree/main/PROYECTOS/22-cryptos-currency",
     id: 5,
-    tecnologias: ["Vite", "CSS3", "API"],
+    tecnologias: ["Vite", "CSS3", "API REST"],
   },
 ];

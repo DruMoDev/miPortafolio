@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import usePortafolio from "../hooks/usePortafolio";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [isDivVisible, setIsDivVisible] = useState("");
+  const { isDivVisible, setIsDivVisible } = usePortafolio();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,17 +25,11 @@ const Navbar = () => {
   useEffect(() => {
     if (hash) {
       const element = document.getElementById(hash.hash.slice(1));
-      console.log(element);
-
       if (element) {
-        element.scrollIntoView({ behavior: `${"smooth" && "auto"}`});
+        element.scrollIntoView({ behavior: `${"smooth" && "auto"}` });
         setIsDivVisible(hash.hash.slice(1));
       }
     }
-
-    return () => {
-      setIsDivVisible("");
-    };
   }, [hash]);
 
   useEffect(() => {
@@ -81,9 +76,9 @@ const Navbar = () => {
           RM
         </Link>
 
-        <nav className="flex justify-between lg:gap-20 gap-5">
+        <nav className="flex justify-between lg:gap-20 gap-1">
           <Link
-            className={`hover:text-primary hover:font-bold rounded transition-all duration-300 lg:w-[100px] text-center ${
+            className={`hover:text-primary hover:font-bold rounded transition-all duration-300 lg:w-[100px] w-[70px]  text-center ${
               isDivVisible === "aboutMe"
                 ? "text-white font-bold bg-primary"
                 : "text-secondary"
@@ -92,7 +87,7 @@ const Navbar = () => {
             About Me
           </Link>
           <Link
-            className={`hover:text-primary hover:font-bold rounded transition-all duration-300 lg:w-[100px] text-center ${
+            className={`hover:text-primary hover:font-bold rounded transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
               isDivVisible === "misProyectos"
                 ? "text-white font-bold bg-primary"
                 : "text-secondary"
@@ -101,7 +96,7 @@ const Navbar = () => {
             Proyectos
           </Link>
           <Link
-            className={`hover:text-primary hover:font-bold rounded transition-all duration-300 lg:w-[100px] text-center ${
+            className={`hover:text-primary hover:font-bold rounded transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
               isDivVisible === "contacto"
                 ? "text-white font-bold bg-primary"
                 : "text-secondary"
@@ -112,7 +107,7 @@ const Navbar = () => {
           <a
             download={"Roger_Morera_CV.pdf"}
             href="/Roger_Morera_CV.pdf"
-            className="bg-primary rounded px-2 md:px-5 lg:px-10 text-black border border-black hover:bg-white hover:text-primary transition duration-300 hover:border-primary">
+            className="bg-primary rounded px-2 md:px-5 lg:px-10 text-white border border-white font-bold hover:bg-white hover:text-primary transition-all duration-300 hover:border-primary">
             CV
           </a>
         </nav>

@@ -1,66 +1,9 @@
 import { useEffect, useRef } from "react";
-
-const cardDetails = [
-  {
-    imgUrl: `https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592709/Portafolio/prisma_fiaoys.svg`,
-    title: "Prisma.io",
-  },
-
-  {
-    imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592712/Portafolio/firebase_bg8n0w.svg",
-    title: "Firebase",
-  },
-
-  {
-    imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592730/Portafolio/shopify_adtiu3.svg",
-    title: "Shopify",
-  },
-
-  {
-    imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592709/Portafolio/nextjs_mucajc.svg",
-    title: "Next.js",
-  },
-
-  {
-    imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592710/Portafolio/redux_jgfup0.svg",
-    title: "Redux",
-  },
-
-  {
-    imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592713/Portafolio/html_ngqxhs.svg",
-    title: "HTML5",
-  },
-
-  {
-    imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592710/Portafolio/css_snxkm7.svg",
-    title: "CSS3",
-  },
-  {
-    imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592708/Portafolio/javascript_th4mma.svg",
-    title: "JavaScript",
-  },
-  {
-    imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592710/Portafolio/react_cgowjn.svg",
-    title: "React.js",
-  },
-  {
-    imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592731/Portafolio/tailwind_nwyf13.svg",
-    title: "Tailwind.css",
-  },
-];
+import carrouselCardDetails from "../db/carrouselCardDetails";
 
 const CarouselPrueba = () => {
   const containerRef = useRef(null);
-  const clonedCards = [...cardDetails, ...cardDetails]; // Duplica los elementos
+  const clonedCards = [...carrouselCardDetails, ...carrouselCardDetails]; // Duplica los elementos
 
   useEffect(() => {
     const container = containerRef.current;
@@ -98,7 +41,7 @@ const CarouselPrueba = () => {
                 alt={card.title}
                 height={100}
                 width={100}
-                className="size-7 md:size-16 lg:size-20 "
+                className="size-7 md:size-16 lg:size-20 text-white"
               />
             </li>
           ))}
