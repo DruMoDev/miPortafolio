@@ -78,7 +78,7 @@ const Navbar = () => {
 
         <nav className="flex justify-between lg:gap-20 gap-1">
           <Link
-            className={`hover:text-primary hover:font-bold rounded transition-all duration-300 lg:w-[100px] w-[70px]  text-center ${
+            className={`hover:text-primary hover:font-bold py-1 my-auto rounded transition-all duration-300 lg:w-[100px] w-[70px]  text-center justify-center flex ${
               isDivVisible === "aboutMe"
                 ? "text-white font-bold bg-primary"
                 : "text-secondary"
@@ -87,7 +87,7 @@ const Navbar = () => {
             About Me
           </Link>
           <Link
-            className={`hover:text-primary hover:font-bold rounded transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
+            className={`hover:text-primary hover:font-bold rounded py-1 my-auto transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
               isDivVisible === "misProyectos"
                 ? "text-white font-bold bg-primary"
                 : "text-secondary"
@@ -96,7 +96,7 @@ const Navbar = () => {
             Proyectos
           </Link>
           <Link
-            className={`hover:text-primary hover:font-bold rounded transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
+            className={`hover:text-primary hover:font-bold py-1 my-auto rounded transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
               isDivVisible === "contacto"
                 ? "text-white font-bold bg-primary"
                 : "text-secondary"
@@ -107,7 +107,7 @@ const Navbar = () => {
           <a
             download={"Roger_Morera_CV.pdf"}
             href="/Roger_Morera_CV.pdf"
-            className="bg-quaternary rounded px-2 md:px-5 lg:px-10 text-primary  border-primary border-2 font-bold hover:bg-primary hover:text-quaternary transition-all duration-300 hover:border-quaternary">
+            className="bg-quaternary rounded px-2 md:px-5 lg:px-10 text-primary py-0.5 my-auto border-primary border-2 font-bold hover:bg-primary hover:text-quaternary transition-all duration-300 hover:border-quaternary">
             CV
           </a>
         </nav>
