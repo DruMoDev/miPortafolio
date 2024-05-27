@@ -2,10 +2,9 @@ import CarouselPrueba from "./CarouselPrueba";
 
 const AboutMe = () => {
   return (
-    <div
-      className="flex flex-col pt-44 items-center xl:min-h-screen">
+    <div className="flex flex-col pt-44 items-center flex-grow">
       <div className=" container mx-auto">
-        <h1 className="tracking-widest mx-auto text-center lg:text-7xl text-4xl md:text-5xl text-white">
+        <h1 className="tracking-widest mx-auto text-center lg:text-7xl text-4xl md:text-5xl">
           Desarrollador <span className="text-primary">Web</span> Full-Stack
         </h1>
         <p className="mx-8 lg:mx-40 lg:leading-10 leading-7 lg:text-2xl text-base mt-20 text-secondary text-center ">

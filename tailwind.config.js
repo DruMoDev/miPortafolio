@@ -8,10 +8,10 @@ export default {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-custom":
-          "linear-gradient(to right, #5c37e5, #b09df8, #d7cefd, #ffffff)",
+          "linear-gradient(to right, #006AFF, #0087FF, #009AF5, #ffffff)",
       },
       colors: {
-        primary: "#5c37e5",
+        primary: "#006AFF",
         secondary: "#adadad",
         tertiary: "#0B0B0B",
         quaternary: "#0f0f0f",

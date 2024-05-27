@@ -5,8 +5,7 @@ const MisProyectos = () => {
   const { proyectosState } = usePortafolio();
 
   return (
-    <div
-      className="flex flex-col items-center  pb-20 pt-20 lg:pt-28">
+    <div className="flex flex-col items-center lg:mb-10">
       <div className="container">
         <div className="flex items-center gap-4 lg:gap-5 mb-12 lg:mb-24">
           <svg
