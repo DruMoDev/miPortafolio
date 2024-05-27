@@ -72,7 +72,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-5 text-secondary text-xs md:text-lg ">
         <Link
           className="text-primary font-mono font-bold lg:text-3xl md:text-2xl cursor-pointer"
-          to="#aboutMe">
+          to="/#aboutMe">
           RM
         </Link>
 
@@ -101,7 +101,7 @@ const Navbar = () => {
                 ? "text-white font-bold bg-primary"
                 : "text-secondary"
             }`}
-            to="#contacto">
+            to="/#contacto">
             Contacto
           </Link>
           <a
