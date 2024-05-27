@@ -107,7 +107,7 @@ const Navbar = () => {
           <a
             download={"Roger_Morera_CV.pdf"}
             href="/Roger_Morera_CV.pdf"
-            className="bg-primary rounded px-2 md:px-5 lg:px-10 text-white border border-white font-bold hover:bg-white hover:text-primary transition-all duration-300 hover:border-primary">
+            className="bg-quaternary rounded px-2 md:px-5 lg:px-10 text-primary  border-primary border-2 font-bold hover:bg-primary hover:text-quaternary transition-all duration-300 hover:border-quaternary">
             CV
           </a>
         </nav>

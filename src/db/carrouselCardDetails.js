@@ -1,24 +1,24 @@
 const carrouselCardDetails = [
   {
-    imgUrl: `https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592709/Portafolio/prisma_fiaoys.svg`,
+    imgUrl: `https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592709/Portafolio/Carrousel_Icons/prisma_fiaoys.svg`,
     title: "Prisma.io",
   },
 
   {
     imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592712/Portafolio/firebase_bg8n0w.svg",
+      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592712/Portafolio/Carrousel_Icons/firebase_bg8n0w.svg",
     title: "Firebase",
   },
 
   {
     imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592730/Portafolio/shopify_adtiu3.svg",
+      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592730/Portafolio/Carrousel_Icons/shopify_adtiu3.svg",
     title: "Shopify",
   },
 
   {
     imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592709/Portafolio/nextjs_mucajc.svg",
+      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592709/Portafolio/Carrousel_Icons/nextjs_mucajc.svg",
     title: "Next.js",
   },
   {
@@ -29,34 +29,34 @@ const carrouselCardDetails = [
 
   {
     imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592710/Portafolio/redux_jgfup0.svg",
+      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592710/Portafolio/Carrousel_Icons/redux_jgfup0.svg",
     title: "Redux",
   },
 
   {
     imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592713/Portafolio/html_ngqxhs.svg",
+      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592713/Portafolio/Carrousel_Icons/html_ngqxhs.svg",
     title: "HTML5",
   },
 
   {
     imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592710/Portafolio/css_snxkm7.svg",
+      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592710/Portafolio/Carrousel_Icons/css_snxkm7.svg",
     title: "CSS3",
   },
   {
     imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592708/Portafolio/javascript_th4mma.svg",
+      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592708/Portafolio/Carrousel_Icons/javascript_th4mma.svg",
     title: "JavaScript",
   },
   {
     imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592710/Portafolio/react_cgowjn.svg",
+      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592710/Portafolio/Carrousel_Icons/react_cgowjn.svg",
     title: "React.js",
   },
   {
     imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592731/Portafolio/tailwind_nwyf13.svg",
+      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592731/Portafolio/Carrousel_Icons/tailwind_nwyf13.svg",
     title: "Tailwind.css",
   },
   {
