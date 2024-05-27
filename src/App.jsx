@@ -4,6 +4,8 @@ import ProyectoPage from "./pages/ProyectoPage";
 import Layout from "./components/layout/Layout";
 
 function App() {
+  console.log("hola");
+  
   const router = createBrowserRouter([
     {
       element: <Layout />,
