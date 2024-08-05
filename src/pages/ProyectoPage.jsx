@@ -1,20 +1,21 @@
 import { Link, useParams } from "react-router-dom";
 import usePortafolio from "../hooks/usePortafolio";
 import { useEffect } from "react";
+import { proyectosContent } from "../db/proyectosContent";
 
 const ProyectoPage = () => {
   const { id } = useParams();
-  const { proyectosState, setIsDivVisible } = usePortafolio();
+  const { setIsDivVisible } = usePortafolio();
   useEffect(() => {
     setIsDivVisible("misProyectos");
     window.scrollTo(0, 0);
   }, []);
 
   const { titulo, descripcion, img, url, tecnologias, gitUrl, extra } =
-    proyectosState.find((proyecto) => proyecto.id.toString() === id.toString());
+    proyectosContent[id]
 
   return (
-    <>
+    <>     
       <main className="container mx-auto pt-20 min-h-screen flex flex-col items-center lg:hidden">
         <h1 className="text-4xl font-bold text-center mb-6">{titulo}</h1>
 
@@ -74,7 +75,7 @@ const ProyectoPage = () => {
         </div>
       </main>
 
-      <main className="container mx-auto pt-32 min-h-screen  flex-col items-center hidden lg:flex">
+      <main className="container mx-auto pt-32  flex-col items-center hidden lg:flex">
         <h1 className=" font-bold text-center mb-20 text-7xl">{titulo}</h1>
         <div className="flex gap-20 justify-center">
           <img className="rounded-lg w-[600px]" src={img} alt={titulo} />

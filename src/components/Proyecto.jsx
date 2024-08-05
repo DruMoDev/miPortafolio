@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import Badge from "./Badge";
 
-const Proyecto = ({ proyecto }) => {
-  const { titulo, descripcion, img, url, id, tecnologias, gitUrl } = proyecto;
+const Proyecto = ({ proyecto, id }) => {
+  const { titulo, descripcion, img, url, tecnologias, gitUrl } = proyecto;
 
   return (
     <article className="border flex flex-col bg-black border-white lg:p-7 p-4 rounded-2xl w-full">

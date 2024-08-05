@@ -1,13 +1,21 @@
 export const proyectosContent = [
   {
+    titulo: "Restaurants Menu Creator",
+    descripcion:
+      "Restaurants Menu Creator es una aplicación que permite a los propietarios de restaurantes crear y personalizar menús digitales de forma sencilla y eficiente. Los usuarios pueden agregar restaurantes, menus, secciones y platos.",
+    img: "https://res.cloudinary.com/dpjbtovxz/image/upload/v1722879009/Portafolio/Projects_Img/restaurants-menu-creator-img_uhtgru.png",
+    url: "https://restaurant-menu-creator.vercel.app/",
+    gitUrl: "https://github.com/DruMoDev/restaurant-menu-creator",
+    tecnologias: ["Next", "Supabase", "TypeScript", "Tailwind"],
+  },
+  {
     titulo: "Task Planner",
     descripcion:
       "TaskPlanner es una herramienta integral diseñada para simplificar la gestión de proyectos y facilitar la colaboración. Permite a los usuarios crear proyectos, asignar tareas, establecer plazos, realizar un seguimiento del progreso y comunicarse eficientemente, todo desde una plataforma centralizada. Ideal para equipos de cualquier tamaño, TaskPlanner optimiza la coordinación y maximiza la productividad.",
     img: "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592708/Portafolio/Projects_Img/img_taskplanner_rfekdf.png",
     url: "https://task-planner-dru.vercel.app/",
-    tecnologias: ["ExpressJs", "NodeJs", "MongoDB", "Tailwind", "Vite"],
+    tecnologias: ["ExpressJs", "NodeJs", "MongoDB", "Tailwind", "ReactJs"],
     gitUrl: "https://github.com/DruMoDev/TaskPlanner_Frontend",
-    id: 6,
     extra:
       "Usuario de prueba para utilizar la aplicación: email: <span class='text-white underline'>prueba@gmail.com</span> password: <span class='text-white underline'>prueba</span>",
   },
@@ -19,7 +27,6 @@ export const proyectosContent = [
     url: "https://tienda-y-paneldeadministracion-dru.vercel.app/",
     gitUrl:
       "https://github.com/DruMoDev/Proyectos_Propios_ReactJs/tree/main/PROYECTOS/30_quiosco_app",
-    id: 1,
     tecnologias: ["Next", "Prisma", "MongoDB", "Tailwind"],
   },
   {
@@ -30,8 +37,7 @@ export const proyectosContent = [
     url: "https://control-gastos-dru.netlify.app/",
     gitUrl:
       "https://github.com/DruMoDev/Proyectos_Propios_ReactJs/tree/main/PROYECTOS/21-control-gastos",
-    id: 2,
-    tecnologias: ["Vite", "CSS3", "Context API"],
+    tecnologias: ["ReactJs", "CSS3", "Context API"],
   },
   {
     titulo: "Cotizador de Seguros de Automóvil",
@@ -41,8 +47,7 @@ export const proyectosContent = [
     url: "https://cotizador-seguros-automoviles.vercel.app/",
     gitUrl:
       "https://github.com/DruMoDev/Proyectos_Propios_ReactJs/tree/main/PROYECTOS/26-cotizador-automoviles",
-    id: 3,
-    tecnologias: ["Vite", "Tailwind", "Context API"],
+    tecnologias: ["ReactJs", "Tailwind", "Context API"],
   },
   {
     titulo: "Buscador de Fotos",
@@ -52,8 +57,7 @@ export const proyectosContent = [
     url: "https://search-photo-app-dru.netlify.app/",
     gitUrl:
       "https://github.com/DruMoDev/Proyectos_Propios_ReactJs/tree/main/PROYECTOS/09-search-photo-app",
-    id: 4,
-    tecnologias: ["Vite", "Tailwind", "API REST"],
+    tecnologias: ["ReactJs", "Tailwind", "API REST"],
   },
   {
     titulo: "Cotizador de Criptomonedas",
@@ -63,7 +67,6 @@ export const proyectosContent = [
     url: "https://cotizador-criptomonedas-dru.netlify.app/",
     gitUrl:
       "https://github.com/DruMoDev/Proyectos_Propios_ReactJs/tree/main/PROYECTOS/22-cryptos-currency",
-    id: 5,
-    tecnologias: ["Vite", "CSS3", "API REST"],
+    tecnologias: ["ReactJs", "CSS3", "API REST"],
   },
 ];

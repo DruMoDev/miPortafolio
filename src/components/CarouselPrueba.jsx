@@ -38,10 +38,8 @@ const CarouselPrueba = () => {
             <li key={index}>
               <img
                 src={card.imgUrl}
-                alt={card.title}
-                height={100}
-                width={100}
-                className="size-7 md:size-16 lg:size-20 text-white"
+                alt={card.title}                
+                className="size-7 md:size-16 xl:size-20 text-white "
               />
             </li>
           ))}

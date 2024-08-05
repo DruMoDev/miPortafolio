@@ -1,8 +1,7 @@
 import Proyecto from "./Proyecto";
-import usePortafolio from "../hooks/usePortafolio";
+import { proyectosContent } from "../db/proyectosContent";
 
 const MisProyectos = () => {
-  const { proyectosState } = usePortafolio();
 
   return (
     <div className="flex flex-col items-center lg:mb-10">
@@ -29,8 +28,8 @@ const MisProyectos = () => {
           </h2>
         </div>
         <section className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-10">
-          {proyectosState.map((proyecto) => (
-            <Proyecto key={proyecto.titulo} proyecto={proyecto} />
+          {proyectosContent.map((proyecto, index) => (
+            <Proyecto key={proyecto.titulo} proyecto={proyecto} id={index}/>
           ))}
         </section>
       </div>

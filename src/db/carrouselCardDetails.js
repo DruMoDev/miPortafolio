@@ -45,9 +45,14 @@ const carrouselCardDetails = [
     title: "CSS3",
   },
   {
-    imgUrl:
-      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592708/Portafolio/Carrousel_Icons/javascript_th4mma.svg",
+    imgUrl:"https://res.cloudinary.com/dpjbtovxz/image/upload/v1722876066/Portafolio/Carrousel_Icons/javascript-icon_hpfayg.svg",
+      // "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592708/Portafolio/Carrousel_Icons/javascript_th4mma.svg",
     title: "JavaScript",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1722875905/Portafolio/Carrousel_Icons/typescriptlang-icon_e1tcn9.svg",
+    title: "TypeScript",
   },
   {
     imgUrl:
@@ -69,6 +74,11 @@ const carrouselCardDetails = [
     imgUrl:
       "https://res.cloudinary.com/dpjbtovxz/image/upload/v1716813225/Portafolio/Carrousel_Icons/mongodb_okey9e.svg",
     title: "MongoDB",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dpjbtovxz/image/upload/v1722873720/Portafolio/Carrousel_Icons/supabase-icon_ywyxc7.svg",
+    title: "Supabase",
   },
 ];
 
