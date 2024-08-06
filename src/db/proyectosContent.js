@@ -7,6 +7,8 @@ export const proyectosContent = [
     url: "https://restaurant-menu-creator.vercel.app/",
     gitUrl: "https://github.com/DruMoDev/restaurant-menu-creator",
     tecnologias: ["Next", "Supabase", "TypeScript", "Tailwind"],
+    extra:
+    "Usuario de prueba para utilizar la aplicación: email: <span class='text-white underline'>prueba@gmail.com</span> password: <span class='text-white underline'>123456</span>",
   },
   {
     titulo: "Task Planner",
