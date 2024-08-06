@@ -106,7 +106,7 @@ const Navbar = () => {
           </Link>
           <a
             download={"Roger_Morera_CV.pdf"}
-            href="/Roger_Morera_CV.pdf"
+            href="/src/db/Roger_Morera_CV.pdf" // Replace with the actual path to your PDF document
             className="bg-quaternary rounded px-2 md:px-5 lg:px-10 text-primary py-0.5 my-auto border-primary border-2 font-bold hover:bg-primary hover:text-quaternary transition-all duration-300 hover:border-quaternary">
             CV
           </a>

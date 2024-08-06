@@ -5,7 +5,7 @@ const Proyecto = ({ proyecto, id }) => {
   const { titulo, descripcion, img, url, tecnologias, gitUrl } = proyecto;
 
   return (
-    <article className="border flex flex-col bg-black border-white lg:p-7 p-4 rounded-2xl w-full">
+    <article className="border flex flex-col bg-black border-white lg:p-7 p-4 rounded-2xl w-full ">
       <Link to={`/proyecto/${id}`}>
         <img
           className="mx-auto rounded-lg w-full"
@@ -17,7 +17,7 @@ const Proyecto = ({ proyecto, id }) => {
       </Link>
       <Link
         to={`/proyecto/${id}`}
-        className="lg:my-4 my-2 mt-7 lg:text-3xl text-xl lg:text-left  font-bold tracking-wide overflow-hidden line-clamp-1 text-white hover:text-primary hover:underline">
+        className="lg:my-4 my-2 mt-7 lg:text-3xl text-xl lg:text-left  font-bold tracking-wide overflow-hidden line-clamp-1 text-white hover:text-primary hover:underline ">
         {titulo}
       </Link>
       <p
@@ -30,7 +30,7 @@ const Proyecto = ({ proyecto, id }) => {
           {tecnologias.map((tec) => (
             <Badge
               key={tec}
-              className={"lg:px-1.5 px-1 lg:text-sm text-white bg-primary"}>
+              className={"lg:px-1.5 px-1 lg:text-sm text-white bg-zinc-500"}>
               {tec}
             </Badge>
           ))}

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-quinary shadow m-4 dark:bg-gray-800 text-white mx-auto absolute bottom-100 w-full">
+    <footer className="bg-quinary text-white w-full">
       <div className="w-full mx-auto max-w-screen-xl p-4 flex flex-col md:flex-row items-center justify-between container">
         <span className="text-sm xl:text-base  sm:text-center dark:text-gray-400">
           © {new Date().getFullYear().toString()} Roger Morera | Todos los
