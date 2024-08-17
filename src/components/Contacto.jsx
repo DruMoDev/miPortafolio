@@ -28,7 +28,9 @@ const Contacto = () => {
   };
 
   return (
-    <div className="container mx-auto min-h-screen flex flex-col justify-center items-center">
+    <section
+      id="contacto"
+      className="container mx-auto min-h-screen flex flex-col justify-center items-center">
       <h1 className="text-3xl lg:text-6xl font-bold mb-10 bg-gradient-custom text-transparent bg-clip-text">
         Contactame
       </h1>
@@ -94,7 +96,7 @@ const Contacto = () => {
           Enviar
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 

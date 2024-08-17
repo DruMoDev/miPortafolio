@@ -64,54 +64,46 @@ const Navbar = () => {
 
   return (
     <header
-      className={`w-full fixed z-50 ${
+      className={`w-full fixed top-0 z-50 ${
         scrolled
-          ? "bg-quinary border-black border"
-          : "bg-transparent border border-transparent "
+          ? "bg-quinary border-black border-b"
+          : "bg-transparent border-b border-transparent "
       } transition-background-color duration-300 ease-in-out `}>
-      <div className="container mx-auto flex items-center justify-between py-5 text-secondary text-xs md:text-lg ">
+      <nav className="flex justify-between lg:max-w-[1024px] container mx-auto  items-center  py-5 text-secondary text-xs  px-10 lg:px-0 lg:text-lg">
         <Link
-          className="text-primary font-mono font-bold lg:text-3xl md:text-2xl cursor-pointer"
+          className={`hover:text-primary py-1 my-auto rounded transition-all duration-300 lg:w-[100px] w-[70px]  text-center justify-center flex ${
+            isDivVisible === "aboutMe"
+              ? "text-white font-bold bg-primary hover:text-white"
+              : "text-secondary"
+          }`}
           to="/#aboutMe">
-          RM
+          About Me
         </Link>
-
-        <nav className="flex justify-between lg:gap-20 gap-1">
-          <Link
-            className={`hover:text-primary py-1 my-auto rounded transition-all duration-300 lg:w-[100px] w-[70px]  text-center justify-center flex ${
-              isDivVisible === "aboutMe"
-                ? "text-white font-bold bg-primary hover:text-white"
-                : "text-secondary"
-            }`}
-            to="/#aboutMe">
-            About Me
-          </Link>
-          <Link
-            className={`hover:text-primary rounded py-1 my-auto transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
-              isDivVisible === "misProyectos"
-                ? "text-white font-bold bg-primary hover:text-white"
-                : "text-secondary"
-            }`}
-            to="/#misProyectos">
-            Proyectos
-          </Link>
-          <Link
-            className={`hover:text-primary py-1 my-auto rounded transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
-              isDivVisible === "contacto"
-                ? "text-white font-bold bg-primary hover:text-white"
-                : "text-secondary"
-            }`}
-            to="/#contacto">
-            Contacto
-          </Link>
-          <a
-            download={"Roger-Morera-CV-ES.pdf"}
-            href="/src/db/Roger-Morera-CV-ES.pdf" // Replace with the actual path to your PDF document
-            className="bg-quaternary rounded px-2 md:px-5 lg:px-10 text-primary py-0.5 my-auto border-primary border-2 font-bold hover:bg-primary hover:text-quaternary transition-all duration-300 hover:border-quaternary">
-            CV
-          </a>
-        </nav>
-      </div>
+        <Link
+          className={`hover:text-primary rounded py-1 my-auto transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
+            isDivVisible === "misProyectos"
+              ? "text-white font-bold bg-primary hover:text-white"
+              : "text-secondary"
+          }`}
+          to="/#misProyectos">
+          Proyectos
+        </Link>
+        <Link
+          className={`hover:text-primary py-1 my-auto rounded transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
+            isDivVisible === "contacto"
+              ? "text-white font-bold bg-primary hover:text-white"
+              : "text-secondary"
+          }`}
+          to="/#contacto">
+          Contacto
+        </Link>
+        <a
+          download={"Roger-Morera-CV-ES.pdf"}
+          href="/src/db/Roger-Morera-CV-ES.pdf" // Replace with the actual path to your PDF document
+          className="bg-quaternary rounded px-2 md:px-5 lg:px-10 text-primary py-0.5 my-auto border-primary border-2 font-bold hover:bg-primary hover:text-quaternary transition-all duration-300 hover:border-quaternary">
+          CV
+        </a>
+      </nav>
     </header>
   );
 };

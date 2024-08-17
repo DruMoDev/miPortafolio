@@ -17,9 +17,6 @@ export default {
         quaternary: "#0f0f0f",
         quinary: "#15151D", //Color del Navbar
       },
-      container: {
-        padding: "2rem",
-      },
     },
   },
   plugins: [],
