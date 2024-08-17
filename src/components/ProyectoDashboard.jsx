@@ -30,7 +30,7 @@ const ProyectoDashboard = ({ proyecto, id }) => {
             const IconComponent = iconsMap[tecnologia.icon];
             return (
               <div key={tecnologia.name}>
-                {IconComponent && <IconComponent className="size-4 lg:size-8 text-white bg-transparent" />}
+                {IconComponent && <IconComponent className="size-4 lg:size-8 text-white " />}
               </div>
             );
           })}

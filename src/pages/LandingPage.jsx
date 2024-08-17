@@ -2,7 +2,7 @@ import AboutMe from "../components/AboutMe";
 import Contacto from "../components/Contacto";
 import MisProyectos from "../components/MisProyectos";
 
-const HomePage = () => {
+const LandingPage = () => {
   return (
     <>
       <AboutMe />
@@ -11,4 +11,4 @@ const HomePage = () => {
     </>
   );
 };
-export default HomePage;
+export default LandingPage;

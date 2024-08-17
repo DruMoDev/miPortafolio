@@ -6,6 +6,9 @@ import ReactIcon from "./icons/ReactIcon";
 import TailwindIcon from "./icons/TailwindIcon";
 import { SupabaseIcon } from "./icons/SupabaseIcon";
 import TypescriptIcon from "./icons/TypescriptIcon";
+import JavascriptIcon from "./icons/JavascriptIcon";
+import PrismaIcon from "./icons/PrismaIcon";
+import CssIcon from "./icons/CssIcon";
 
 const iconsMap = {
   react: ReactIcon,
@@ -16,6 +19,9 @@ const iconsMap = {
   mongodb: MongodbIcon,
   supabase: SupabaseIcon,
   typescript: TypescriptIcon,
+  javascript: JavascriptIcon,
+  prisma: PrismaIcon,
+  css3: CssIcon
 };
 
 export default iconsMap;

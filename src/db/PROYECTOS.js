@@ -64,7 +64,6 @@ export const PROYECTOS = [
     tecnologias: [
       { name: "React.js", icon: "react" },
       { name: "CSS3", icon: "css3" },
-      { name: "Context API", icon: "contextapi" },
     ],
     aprendizajes:
       "Desarrollé una comprensión más profunda del manejo de estados globales con Context API y de la creación de interfaces de usuario responsivas.",
@@ -80,7 +79,6 @@ export const PROYECTOS = [
     tecnologias: [
       { name: "React.js", icon: "react" },
       { name: "TailwindCSS", icon: "tailwind" },
-      { name: "Context API", icon: "contextapi" },
     ],
     aprendizajes:
       "Me enfoqué en la gestión de datos en tiempo real y en la optimización de la experiencia del usuario para flujos de trabajo eficientes.",
@@ -96,7 +94,6 @@ export const PROYECTOS = [
     tecnologias: [
       { name: "React.js", icon: "react" },
       { name: "TailwindCSS", icon: "tailwind" },
-      { name: "API REST", icon: "apirest" },
     ],
     aprendizajes:
       "Refiné mis habilidades en la integración de APIs externas y en la optimización del rendimiento de aplicaciones React.",
@@ -112,7 +109,6 @@ export const PROYECTOS = [
     tecnologias: [
       { name: "React.js", icon: "react" },
       { name: "CSS3", icon: "css3" },
-      { name: "API REST", icon: "apirest" },
     ],
     aprendizajes:
       "Aprendí sobre la integración de datos en tiempo real y la creación de interfaces de usuario que presentan datos complejos de manera clara y accesible.",

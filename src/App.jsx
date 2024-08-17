@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import HomePage from "./pages/HomePage";
+import LandingPage from "./pages/LandingPage";
 import ProyectoPage from "./pages/ProyectoPage";
 import Layout from "./components/layout/Layout";
 
@@ -8,7 +8,7 @@ function App() {
     {
       element: <Layout />,
       children: [
-        { path: "/", element: <HomePage /> },
+        { path: "/", element: <LandingPage /> },
         {
           path: "/proyecto/:id",
           element: <ProyectoPage />,

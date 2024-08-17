@@ -10,6 +10,8 @@ const AboutMe = () => {
         <br></br> Front-End
       </h1>
 
+      
+
       <p className="lg:leading-10 leading-7 lg:text-2xl text-base mt-20 text-secondary text-center font-semibold">
         Soy <span className="text-primary">Roger Morera</span>, un autodidacta
         especializado en <span className="text-primary">Front-end</span>,
