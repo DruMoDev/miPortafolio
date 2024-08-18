@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import iconsMap from "../assets/iconsMap.jsx";
+import iconsMap from "../../assets/iconsMap.jsx";
 
 // TODO: CORREGIR ESTE COMPONENTE CSS a full
 const SingleProjectPage = ({ proyecto }) => {

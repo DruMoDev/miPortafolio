@@ -30,10 +30,10 @@ const Contacto = () => {
   return (
     <section
       id="contacto"
-      className="container mx-auto min-h-screen flex flex-col justify-center items-center">
-      <h1 className="text-3xl lg:text-6xl font-bold mb-10 bg-gradient-custom text-transparent bg-clip-text">
+      className="w-full mx-auto min-h-screen flex flex-col justify-center items-center">
+      <h2 className="lg:text-9xl text-4xl  font-extrabold  tracking-tighter mb-10 bg-gradient-custom pr-1 text-transparent bg-clip-text">
         Contactame
-      </h1>
+      </h2>
       <form
         className="flex flex-col w-3/4 md:w-2/3 bg-quaternary p-8 border border-white rounded"
         onSubmit={handleSubmit}>

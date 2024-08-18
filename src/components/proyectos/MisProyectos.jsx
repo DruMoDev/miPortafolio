@@ -1,5 +1,4 @@
-import Proyecto from "./ProyectoDashboard";
-import { PROYECTOS } from "../db/PROYECTOS";
+import ProyectosList from "./ProyectosList";
 
 const MisProyectos = () => {
   return (
@@ -26,11 +25,7 @@ const MisProyectos = () => {
           Proyectos
         </h2>
       </div>
-      <section className="grid grid-cols-1 gap-10 w-[85%] mx-auto">
-        {PROYECTOS.map((proyecto, index) => (
-          <Proyecto key={index} proyecto={proyecto} id={index} />
-        ))}
-      </section>
+      <ProyectosList />
     </section>
   );
 };

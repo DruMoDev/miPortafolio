@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
-import iconsMap from "../assets/iconsMap";
+import iconsMap from "../../assets/iconsMap";
 
-const ProyectoDashboard = ({ proyecto, id }) => {
+const ProyectoCard = ({ proyecto, id }) => {
   const { titulo, descripcion, img, url, tecnologias, gitUrl } = proyecto;
 
   return (
-    <article className="rounded-lg shadow bg-[#1a1b1e]">
+    <article className="rounded-lg shadow bg-[#1a1b1e] border-2 lg:w-[85%] mx-auto">
       <Link to={`/proyecto/${id}`}>
         <img
-          className="rounded-t-lg w-full object-cover"
+          className="rounded-t w-full object-cover"
           src={img}
           alt={`Imagen del proyecto ${titulo}`}
         />
       </Link>
-      <div className="flex flex-col px-4 py-4 gap-3 lg:gap-5 lg:px-10 lg:py-8">
+
+      <div className="flex flex-col px-4 py-4 gap-3 lg:gap-4 lg:px-10 lg:py-8">
         <h2 className="text-xl font-bold tracking-tighter overflow-hidden line-clamp-1 text-white lg:text-4xl">
           {titulo}
         </h2>
@@ -22,7 +23,7 @@ const ProyectoDashboard = ({ proyecto, id }) => {
           {descripcion}
         </p>
 
-        <div className="flex flex-col lg:flex-row gap-4  lg:justify-between lg:mt-4">
+        <div className="flex flex-col lg:flex-col gap-3  lg:gap-5 lg:justify-between ">
 
     
         <div className="flex gap-4 lg:gap-7 flex-wrap">
@@ -36,7 +37,7 @@ const ProyectoDashboard = ({ proyecto, id }) => {
           })}
         </div>
 
-        <div className="flex gap-2 lg:gap-5">
+        <div className="flex gap-3 lg:gap-5">
           <Link
             target="_blank"
             rel="noopener noreferrer"
@@ -108,4 +109,4 @@ const ProyectoDashboard = ({ proyecto, id }) => {
   );
 };
 
-export default ProyectoDashboard;
+export default ProyectoCard;
