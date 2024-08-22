@@ -3,7 +3,7 @@ export const PROYECTOS = [
     titulo: "Restaurants Menu Creator",
     descripcion:
       "Aplicación para que dueños de restaurantes puedan crear y personalizar menús digitales de manera sencilla, añadiendo restaurantes, menús, secciones y platos.",
-    img: "https://res.cloudinary.com/dpjbtovxz/image/upload/v1722879009/Portafolio/Projects_Img/restaurants-menu-creator-img_uhtgru.png",
+    img: "proyectos/restaurants-menu-creator-img.png",
     url: "https://restaurant-menu-creator.vercel.app/",
     gitUrl: "https://github.com/DruMoDev/restaurant-menu-creator",
     tecnologias: [

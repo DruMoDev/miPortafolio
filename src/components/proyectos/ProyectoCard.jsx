@@ -5,21 +5,21 @@ const ProyectoCard = ({ proyecto, id }) => {
   const { titulo, descripcion, img, url, tecnologias, gitUrl } = proyecto;
 
   return (
-    <article className="rounded-lg shadow bg-[#1a1b1e] border-2 lg:w-[85%] mx-auto">
+    <article className="group rounded-lg shadow bg-[#1a1b1e] border-2 lg:w-[85%] mx-auto relative">
       <Link to={`/proyecto/${id}`}>
         <img
-          className="rounded-t w-full object-cover"
+          className="rounded-t w-full object-cover group-hover:opacity-10 transition-all duration-300"
           src={img}
           alt={`Imagen del proyecto ${titulo}`}
         />
       </Link>
 
-      <div className="flex flex-col px-4 py-4 gap-3 lg:gap-4 lg:px-10 lg:py-8">
-        <h2 className="text-xl font-bold tracking-tighter overflow-hidden line-clamp-1 text-white lg:text-4xl">
+      <div className="flex flex-col px-4 py-4 gap-3 lg:gap-4 lg:px-10 lg:py-8 absolute bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-opcaity  transition-all duration-500">
+        <h2 className="text-xl font-bold tracking-tighter overflow-hidden line-clamp-1 text-white lg:text-5xl gro">
           {titulo}
         </h2>
 
-        <p className="text-sm lg:text-xl text-[#6e6e77] overflow-hidden line-clamp-2 text-pretty">
+        <p className="text-sm lg:text-xl text-[#9696a2] overflow-hidden line-clamp-2 text-pretty">
           {descripcion}
         </p>
 
