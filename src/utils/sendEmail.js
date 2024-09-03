@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
 
 const sendEmail = async (formDataObject) => {
-  const { nombre, apellido, email, comentario } = formDataObject;
+  const { nombre, email, comentario } = formDataObject;
   emailjs.init(import.meta.env.VITE_EMAIL_USER_ID);
   emailjs
     .send(
@@ -9,7 +9,7 @@ const sendEmail = async (formDataObject) => {
       import.meta.env.VITE_EMAIL_TEMPLATE_ID,
       {
         to_name: "Roger",
-        from_name: `${nombre} ${apellido} email: ${email}`,
+        from_name: `${nombre}, email: ${email}`,
         message: comentario,
       }
     )
