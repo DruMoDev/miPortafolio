@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import usePortafolio from "../hooks/usePortafolio";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const { isDivVisible, setIsDivVisible } = usePortafolio();
 
@@ -14,7 +16,6 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Limpia el event listener cuando el componente se desmonta
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -34,7 +35,6 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Obtiene la información del rectángulo del div objetivo
       const aboutmeDiv = document.getElementById("aboutMe");
       const proyectosDiv = document.getElementById("misProyectos");
       const contactoDiv = document.getElementById("contacto");
@@ -42,8 +42,6 @@ const Navbar = () => {
       const aboutmeRect = aboutmeDiv.getBoundingClientRect();
       const proyectosRect = proyectosDiv.getBoundingClientRect();
       const contactoRect = contactoDiv.getBoundingClientRect();
-
-      // Comprueba si el rectángulo está dentro de la ventana visible
 
       if (aboutmeRect.bottom > 100) {
         setIsDivVisible("aboutMe");
@@ -53,10 +51,8 @@ const Navbar = () => {
         setIsDivVisible("contacto");
       }
     };
-    // Agrega el evento de scroll al montar el componente
     window.addEventListener("scroll", handleScroll);
 
-    // Elimina el evento de scroll al desmontar el componente
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -77,8 +73,9 @@ const Navbar = () => {
               : "text-secondary hover:text-white"
           }`}
           to="/#aboutMe">
-          About Me
+          {t("navbar.aboutMe")}
         </Link>
+
         <Link
           className={`rounded py-1 my-auto transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
             isDivVisible === "misProyectos"
@@ -86,8 +83,9 @@ const Navbar = () => {
               : "text-secondary hover:text-white "
           }`}
           to="/#misProyectos">
-          Proyectos
+          {t("navbar.projects")}
         </Link>
+
         <Link
           className={`py-1 my-auto rounded transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
             isDivVisible === "contacto"
@@ -95,13 +93,14 @@ const Navbar = () => {
               : "text-secondary hover:text-white "
           }`}
           to="/#contacto">
-          Contacto
+          {t("navbar.contact")}
         </Link>
+
         <a
           download={"Roger-Morera-CV-ES.pdf"}
-          href="Roger-Morera-CV-ES.pdf" // Replace with the actual path to your PDF document
+          href="Roger-Morera-CV-ES.pdf"
           className="bg-quaternary rounded px-2 md:px-5 lg:px-10 text-primary py-0.5 my-auto border-primary border-2 font-bold hover:bg-primary hover:text-quaternary transition-all duration-300 hover:border-quaternary">
-          CV
+          {t("navbar.cv")}
         </a>
       </nav>
     </header>

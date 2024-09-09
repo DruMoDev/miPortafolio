@@ -1,29 +1,32 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-quinary text-white w-full">
       <div className="w-full mx-auto py-4 flex flex-col-reverse md:flex-row items-center justify-between container gap-1">
         <span className="text-xs xl:text-base text-center dark:text-gray-400">
-          © {new Date().getFullYear().toString()} Roger Morera | Todos los
-          Derechos Reservados.
+          © {new Date().getFullYear().toString()} Roger Morera |{" "}
+          {t("footer.copyright")}
         </span>
         <ul className="flex flex-wrap items-center justify-center text-center gap-3 xl:mt-3 text-xs xl:text-base font-medium  dark:text-gray-400 mt-0">
           <li>
             <Link to="/#aboutMe" className="hover:text-primary transition-all">
-              About Me
+              {t("footer.aboutMe")}
             </Link>
           </li>
           <li>
             <Link
               to="/#misProyectos"
               className="hover:text-primary transition-all">
-              Proyectos
+              {t("footer.projects")}
             </Link>
           </li>
           <li>
             <Link to="/#contacto" className="hover:text-primary transition-all">
-              Contacto
+              {t("footer.contact")}
             </Link>
           </li>
           <li>

@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
 import ProyectosList from "./ProyectosList";
 
 const MisProyectos = () => {
+  const { t } = useTranslation();
   return (
-    <section id="misProyectos" className="flex flex-col  lg:mb-10 mt-24 lg:mt-36">
+    <section
+      id="misProyectos"
+      className="flex flex-col  lg:mb-10 mt-24 lg:mt-36">
       <div className="flex items-center justify-center lg:justify-start gap-2 lg:gap-5 mb-12 lg:mb-24">
         <svg
           viewBox="0 0 24 24"
@@ -22,7 +26,7 @@ const MisProyectos = () => {
         <h2
           className="lg:text-9xl text-4xl  font-extrabold  tracking-tighter pr-1 pb-2 lg:pb-5
         bg-gradient-custom text-transparent bg-clip-text">
-          Proyectos
+          {t("projects.title")}
         </h2>
       </div>
       <ProyectosList />

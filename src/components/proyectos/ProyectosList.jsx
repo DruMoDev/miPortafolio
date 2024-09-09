@@ -1,24 +1,35 @@
-import { useState } from "react"
-import { PROYECTOS } from "../../db/PROYECTOS"
-import ProyectoCard from "./ProyectoCard"
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import ProyectoCard from "./ProyectoCard";
 import ShowMoreButton from "./ShowMoreButton";
 
 const ProyectosList = () => {
-  const [proyectos, setProyectos] = useState(PROYECTOS.slice(0,3));
+  const { t } = useTranslation();
+  const [proyectos, setProyectos] = useState(
+    t("projectsContent", { returnObjects: true }).slice(0, 3)
+  );
+  const [showAll, setShowAll] = useState(false);
 
-  
-// TODO: Refactorizar los botones a misproyectos, para que esto solo sea la list
+  const handleShowMore = () => {
+    if (showAll) {
+      setProyectos(t("projectsContent", { returnObjects: true }).slice(0, 3));
+      setShowAll(!showAll);
+      return
+    }
+    setProyectos(t("projectsContent", { returnObjects: true }));
+    setShowAll(!showAll);
+  };
+
   return (
     <>
-
-    <section className="grid grid-cols-1 gap-10 w-[85%] lg:w-[100%] mx-auto">
-        {proyectos.map((proyecto, index) => (
+      <section className="grid grid-cols-1 gap-10 w-[85%] lg:w-[100%] mx-auto">
+        {proyectos?.map((proyecto, index) => (
           <ProyectoCard key={index} proyecto={proyecto} id={index} />
-          
         ))}
       </section>
-        <ShowMoreButton setProyectos={setProyectos} proyectos={proyectos}/>
+      <ShowMoreButton handleShowMore={handleShowMore} showAll={showAll} />
     </>
-  )
-}
-export default ProyectosList
+  );
+};
+
+export default ProyectosList;

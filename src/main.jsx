@@ -5,16 +5,17 @@ import { PortafolioProvider } from "./context/PortafolioProvider.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Analytics } from "@vercel/analytics/react";
+import "./i18next.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <PortafolioProvider>
+  <PortafolioProvider>
     <Analytics />
-      <ToastContainer
-        autoClose="2000"
-        closeOnClick
-        pauseOnHover={false}
-        pauseOnFocusLoss={false}
-      />
-      <App />
-    </PortafolioProvider>
+    <ToastContainer
+      autoClose="2000"
+      closeOnClick
+      pauseOnHover={false}
+      pauseOnFocusLoss={false}
+    />
+    <App />
+  </PortafolioProvider>
 );

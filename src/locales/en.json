@@ -1,0 +1,136 @@
+{
+  "aboutMe": {
+    "title-1": "Web ",
+    "title-2": "Developer",
+    "title-3": "\nFront-End",
+    "description-1": "I am ",
+    "description-2": "Roger Morera",
+    "description-3": ", a self-taught developer specializing in ",
+    "description-4": "Front-end",
+    "description-5": ", expanding my skills towards ",
+    "description-6": "Full-stack",
+    "description-7": " development, with projects that you can see below.",
+    "technologies": "These are the technologies I have worked with"
+  },
+  "navbar": {
+    "aboutMe": "About Me",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cv": "Resume"
+  },
+  "footer": {
+    "copyright": "All Rights Reserved.",
+    "aboutMe": "About Me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "name": "Name *",
+    "email": "Email *",
+    "message": "Comment *",
+    "placeholder": "I would like to contact you to...",
+    "submit": "Send",
+    "success": "Email sent successfully!"
+  },
+  "projects": {
+    "title": "Projects",
+    "showButton": "Show more...",
+    "hideButton": "Hide projects..."
+  },
+  "projectsContent": [
+    {
+      "titulo": "Restaurants Menu Creator",
+      "descripcion": "Application for restaurant owners to easily create and customize digital menus by adding restaurants, menus, sections, and dishes.",
+      "img": "proyectos/restaurants-menu-creator-img.png",
+      "url": "https://restaurant-menu-creator.vercel.app/",
+      "gitUrl": "https://github.com/DruMoDev/restaurant-menu-creator",
+      "tecnologias": [
+        { "name": "Next.js", "icon": "next" },
+        { "name": "Supabase", "icon": "supabase" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "TailwindCSS", "icon": "tailwind" }
+      ],
+      "aprendizajes": "I learned to handle real-time databases and implement user authentication with Supabase.",
+      "extra": "Test user to use the application: email: <span class='text-white underline'>test@gmail.com</span> password: <span class='text-white underline'>123456</span>"
+    },
+    {
+      "titulo": "Task Planner",
+      "descripcion": "Project management tool that facilitates collaboration and tracking of tasks, deadlines, and progress, ideal for teams of any size.",
+      "img": "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592708/Portafolio/Projects_Img/img_taskplanner_rfekdf.png",
+      "url": "https://task-planner-dru.vercel.app/",
+      "gitUrl": "https://github.com/DruMoDev/TaskPlanner_Frontend",
+      "tecnologias": [
+        { "name": "Express.js", "icon": "express" },
+        { "name": "Node.js", "icon": "node" },
+        { "name": "MongoDB", "icon": "mongodb" },
+        { "name": "TailwindCSS", "icon": "tailwind" },
+        { "name": "React.js", "icon": "react" }
+      ],
+      "aprendizajes": "I strengthened my skills in database management and creating RESTful APIs with Node.js and Express.",
+      "extra": "Test user to use the application: email: <span class='text-white underline'>test@gmail.com</span> password: <span class='text-white underline'>test</span>"
+    },
+    {
+      "titulo": "Food Kiosk",
+      "descripcion": "Platform to manage orders in a café, allowing customers to explore the menu and staff to manage orders in real-time.",
+      "img": "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592707/Portafolio/Projects_Img/imagen_quiosco_comida_y2en1x.jpg",
+      "url": "https://tienda-y-paneldeadministracion-dru.vercel.app/",
+      "gitUrl": "https://github.com/DruMoDev/Proyectos_Propios_ReactJs/tree/main/PROYECTOS/30_quiosco_app",
+      "tecnologias": [
+        { "name": "Next.js", "icon": "next" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "MongoDB", "icon": "mongodb" },
+        { "name": "TailwindCSS", "icon": "tailwind" }
+      ],
+      "aprendizajes": "I improved in creating intuitive user interfaces and integrating databases with Prisma."
+    },
+    {
+      "titulo": "Expense Tracker",
+      "descripcion": "Application to manage and monitor personal finances, allowing users to record income and expenses, and view detailed financial reports.",
+      "img": "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592708/Portafolio/Projects_Img/img_controldegastos_tyqnei.jpg",
+      "url": "https://control-gastos-dru.netlify.app/",
+      "gitUrl": "https://github.com/DruMoDev/Proyectos_Propios_ReactJs/tree/main/PROYECTOS/21-control-gastos",
+      "tecnologias": [
+        { "name": "React.js", "icon": "react" },
+        { "name": "CSS3", "icon": "css3" }
+      ],
+      "aprendizajes": "I developed a deeper understanding of global state management with Context API and creating responsive user interfaces."
+    },
+    {
+      "titulo": "Car Insurance Quote Calculator",
+      "descripcion": "Application to calculate car insurance costs, facilitating the comparison of quotes between different providers.",
+      "img": "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592714/Portafolio/Projects_Img/im_cotizador_auto_kzzcuf.jpg",
+      "url": "https://cotizador-seguros-automoviles.vercel.app/",
+      "gitUrl": "https://github.com/DruMoDev/Proyectos_Propios_ReactJs/tree/main/PROYECTOS/26-cotizador-automoviles",
+      "tecnologias": [
+        { "name": "React.js", "icon": "react" },
+        { "name": "TailwindCSS", "icon": "tailwind" }
+      ],
+      "aprendizajes": "I focused on real-time data management and optimizing user experience for efficient workflows."
+    },
+    {
+      "titulo": "Photo Finder",
+      "descripcion": "Application that allows users to search and discover high-quality images using custom search terms.",
+      "img": "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592707/Portafolio/Projects_Img/img_buscadordefoto_ub1xuj.jpg",
+      "url": "https://search-photo-app-dru.netlify.app/",
+      "gitUrl": "https://github.com/DruMoDev/Proyectos_Propios_ReactJs/tree/main/PROYECTOS/09-search-photo-app",
+      "tecnologias": [
+        { "name": "React.js", "icon": "react" },
+        { "name": "TailwindCSS", "icon": "tailwind" }
+      ],
+      "aprendizajes": "I refined my skills in integrating external APIs and optimizing React application performance."
+    },
+    {
+      "titulo": "Cryptocurrency Price Calculator",
+      "descripcion": "Application that provides real-time cryptocurrency quotes, allowing users to check prices, view charts, and compare digital currencies.",
+      "img": "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592707/Portafolio/Projects_Img/img_cotizadorcryptomonedas_wkjt0f.jpg",
+      "url": "https://cotizador-criptomonedas-dru.netlify.app/",
+      "gitUrl": "https://github.com/DruMoDev/Proyectos_Propios_ReactJs/tree/main/PROYECTOS/22-cryptos-currency",
+      "tecnologias": [
+        { "name": "React.js", "icon": "react" },
+        { "name": "CSS3", "icon": "css3" }
+      ],
+      "aprendizajes": "I learned about real-time data integration and creating user interfaces that present complex data clearly and accessibly."
+    }
+  ]
+}

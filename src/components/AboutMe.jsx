@@ -1,33 +1,38 @@
+import { useTranslation } from "react-i18next";
 import CarouselPrueba from "./CarouselPrueba";
 
 const AboutMe = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="aboutMe"
       className="flex flex-col items-center flex-grow justify-center mt-28 lg:mt-44 w-[85%] mx-auto lg:w-full">
       <h1 className="tracking-tighter text-center lg:text-8xl text-4xl font-bold">
-        Desarrollador <span className="text-primary">Web</span>
-        <br></br> Front-End
+        {t("aboutMe.title-1")}
+        <span className="text-primary">{t("aboutMe.title-2")}</span>
+        {t("aboutMe.title-3")}
       </h1>
 
-      
-
       <p className="lg:leading-10 leading-7 lg:text-2xl text-base mt-20 text-secondary text-center font-semibold">
-        Soy <span className="text-primary">Roger Morera</span>, un autodidacta
-        especializado en <span className="text-primary">Front-end</span>,
-        expandiendo mis habilidades hacia el desarrollo{" "}
-        <span className="text-primary">Full-stack</span>, con proyectos que
-        podréis ver a continuación.
+        {t("aboutMe.description-1")}
+        <span className="text-primary">{t("aboutMe.description-2")}</span>
+        {t("aboutMe.description-3")}
+        <span className="text-primary">{t("aboutMe.description-4")}</span>
+        {t("aboutMe.description-5")}
+        <span className="text-primary">{t("aboutMe.description-6")}</span>
+        {t("aboutMe.description-7")}
       </p>
 
       <p className="my-10 text-secondary text-center text-xs lg:hidden">
-        Estas son las <span className="text-primary">tecnologias</span> con las
-        que he trabajado
+        {t("aboutMe.technologies")}
       </p>
+
       <div className=" lg:mt-36">
         <CarouselPrueba />
       </div>
     </section>
   );
 };
+
 export default AboutMe;
