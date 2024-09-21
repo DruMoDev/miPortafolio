@@ -58,7 +58,7 @@
       "titulo": "Task Planner",
       "descripcion": "Herramienta de gestión de proyectos que facilita la colaboración y el seguimiento de tareas, plazos y progresos, ideal para equipos de cualquier tamaño.",
       "img": "https://res.cloudinary.com/dpjbtovxz/image/upload/v1715592708/Portafolio/Projects_Img/img_taskplanner_rfekdf.png",
-      "url": "https://task-planner-dru.vercel.app/",
+      "url": "https://taskplanner.drumorera.es/",
       "gitUrl": "https://github.com/DruMoDev/TaskPlanner_Frontend",
       "tecnologias": [
         { "name": "Express.js", "icon": "express" },
