@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/index/(.*)",
-      "destination": "https://restaurant-menu-creator.vercel.app/$1"
+      "destination": "http://localhost:3000/$1"
     }
   ]
 }
