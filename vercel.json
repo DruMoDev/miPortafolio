@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/index/(.*)?", 
-      "destination": "https://impakter-test-local.vercel.app/index/$1"
+      "destination": "https://impakter-test-local.vercel.app/$1"
     }
   ]
 }
