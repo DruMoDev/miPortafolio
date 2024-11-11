@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
-    color: white;
+  color: white;
+}
+
+.bg-animated-gift {
+  background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExam5ybHM1emZkaTVkZ2NzaHdwYjJyZW9ucGRpOXV6ZHAyc3lsN20waCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5bDAc3il2DySZAFGpQ/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
 }

@@ -10,7 +10,7 @@ const AboutMe = () => {
       className="flex flex-col items-center flex-grow justify-center mt-28 lg:mt-44 w-[85%] mx-auto lg:w-full">
       <h1 className="tracking-tighter text-center lg:text-8xl text-4xl font-bold">
         {t("aboutMe.title-1")}
-        <span className="text-primary">{t("aboutMe.title-2")}</span>
+        <span className="bg-animated-gift">{t("aboutMe.title-2")}</span>
         {t("aboutMe.title-3")}
       </h1>
 
