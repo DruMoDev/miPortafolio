@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/index/(.*)?", 
-      "destination": "https://impakter-test-local.vercel.app/index/$1"
+      "source": "/index",
+      "destination": "https://impakter-test-local.vercel.app/index"
+    },
+    {
+      "source": "/index/:path*",
+      "destination": "https://impakter-test-local.vercel.app/index/:path*"
     }
   ]
 }
