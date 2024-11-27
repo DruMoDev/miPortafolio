@@ -8,7 +8,7 @@ const CarouselPrueba = () => {
   useEffect(() => {
     const container = containerRef.current;
     let scrollLeft = 0;
-    const scrollSpeed = 1;
+    const scrollSpeed = 0.7;
 
     const scroll = () => {
       if (container) {
@@ -38,8 +38,8 @@ const CarouselPrueba = () => {
             <li key={index}>
               <img
                 src={card.imgUrl}
-                alt={card.title}                
-                className="size-7 md:size-16 xl:size-20 text-white "
+                alt={card.title}
+                className="text-white size-7 md:size-16 xl:size-20 "
               />
             </li>
           ))}

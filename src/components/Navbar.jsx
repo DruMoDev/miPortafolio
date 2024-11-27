@@ -65,12 +65,12 @@ const Navbar = () => {
           ? "bg-quinary border-black border-b"
           : "bg-transparent border-b border-transparent "
       } transition-background-color duration-300 ease-in-out `}>
-      <nav className="flex justify-between lg:max-w-[1024px] container mx-auto  items-center  py-5 text-secondary text-xs  px-5 lg:px-0 lg:text-lg font-bold">
+      <nav className="flex justify-around max-w-[1000px] px-10 container mx-auto  items-center py-5  font-bold">
         <Link
           className={` py-1 my-auto rounded transition-all duration-300 text-center justify-center flex ${
             isDivVisible === "aboutMe"
-              ? "text-primary hover:text-primary"
-              : "text-secondary hover:text-white"
+              ? "text-primary hover:text-primary hover:underline underline-offset-8"
+              : "hover:underline underline-offset-8"
           }`}
           to="/#aboutMe">
           {t("navbar.aboutMe")}
@@ -79,8 +79,8 @@ const Navbar = () => {
         <Link
           className={`rounded py-1 my-auto transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
             isDivVisible === "misProyectos"
-              ? "text-primary hover:text-primary"
-              : "text-secondary hover:text-white "
+              ? "text-primary hover:text-primary hover:underline underline-offset-8"
+              : "hover:underline underline-offset-8"
           }`}
           to="/#misProyectos">
           {t("navbar.projects")}
@@ -89,8 +89,8 @@ const Navbar = () => {
         <Link
           className={`py-1 my-auto rounded transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
             isDivVisible === "contacto"
-              ? "text-primary hover:text-primary"
-              : "text-secondary hover:text-white "
+              ? "text-primary hover:text-primary hover:underline underline-offset-8"
+              : " hover:underline underline-offset-8"
           }`}
           to="/#contacto">
           {t("navbar.contact")}

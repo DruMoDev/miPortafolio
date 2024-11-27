@@ -7,24 +7,20 @@ const AboutMe = () => {
   return (
     <section
       id="aboutMe"
-      className="flex flex-col items-center flex-grow justify-center mt-28 lg:mt-44 w-[85%] mx-auto lg:w-full">
-      <h1 className="tracking-tighter text-center lg:text-8xl text-4xl font-bold">
+      className="flex flex-col items-center justify-center h-screen mx-auto">
+      <h1 className="font-semibold text-center">
         {t("aboutMe.title-1")}
-        <span className="bg-animated-gift">{t("aboutMe.title-2")}</span>
+        <span className="px-1 bg-animated-gift">{t("aboutMe.title-2")}</span>
         {t("aboutMe.title-3")}
       </h1>
 
-      <p className="lg:leading-10 leading-7 lg:text-2xl text-base mt-20 text-secondary text-center font-semibold">
-        {t("aboutMe.description-1")}
-        <span className="text-primary">{t("aboutMe.description-2")}</span>
-        {t("aboutMe.description-3")}
-        <span className="text-primary">{t("aboutMe.description-4")}</span>
-        {t("aboutMe.description-5")}
-        <span className="text-primary">{t("aboutMe.description-6")}</span>
-        {t("aboutMe.description-7")}
-      </p>
+      <div className="py-3 lg:py-2 px-4 mt-10 rounded-full bg-secondary/[0.08] max-w-[80%]">
+        <p className="px-2 tracking-tight text-center bg-animated-gift w-fit">
+          {t("aboutMe.subtitle")}
+        </p>
+      </div>
 
-      <p className="my-10 text-secondary text-center text-xs lg:hidden">
+      <p className="my-10 text-xs text-center text-secondary lg:hidden">
         {t("aboutMe.technologies")}
       </p>
 

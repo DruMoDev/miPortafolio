@@ -5,8 +5,8 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-quinary text-white w-full">
-      <div className="w-full mx-auto py-4 flex flex-col-reverse md:flex-row items-center justify-between container gap-1">
+    <footer className="bg-quinary text-white w-full mt-10">
+      <div className="max-w-[1000px] px-10 mx-auto py-4 flex flex-col-reverse md:flex-row items-center justify-between container gap-1">
         <span className="text-xs xl:text-base text-center dark:text-gray-400">
           © {new Date().getFullYear().toString()} Roger Morera |{" "}
           {t("footer.copyright")}

@@ -1,15 +1,9 @@
 {
   "aboutMe": {
     "title-1": "Desarrollador ",
-    "title-2": "Web",
-    "title-3": "\nFront-End",
-    "description-1": "Soy ",
-    "description-2": "Roger Morera",
-    "description-3": ", un autodidacta especializado en ",
-    "description-4": "Front-end",
-    "description-5": ", expandiendo mis habilidades hacia el desarrollo ",
-    "description-6": "Full-stack",
-    "description-7": ", con proyectos que podréis ver a continuación.",
+    "title-2": "Web\n",
+    "title-3": "Full Stack",
+    "subtitle": "El desarrollo no se trata solo de código, se trata de resolver problemas con creatividad.",
     "technologies": "Estas son las tecnologias con las que he trabajado"
   },
   "navbar": {
