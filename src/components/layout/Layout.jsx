@@ -1,8 +1,18 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
+import { useTranslation } from "react-i18next";
 
 const Layout = () => {
+  const { t } = useTranslation();
+  document.title = t("metadata.title");
+  document
+    .querySelector("meta[name='description']")
+    .setAttribute("content", t("metadata.description"));
+  document
+    .querySelector("meta[name='keywords']")
+    .setAttribute("content", t("metadata.keywords"));
+    
   return (
     <>
       <Navbar />

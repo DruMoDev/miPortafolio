@@ -8,7 +8,7 @@ const sendEmail = async (formDataObject) => {
       import.meta.env.VITE_EMAIL_SERVICE_ID,
       import.meta.env.VITE_EMAIL_TEMPLATE_ID,
       {
-        to_name: "Roger",
+        to_name: "Dru",
         from_name: `${nombre}, email: ${email}`,
         message: comentario,
       }

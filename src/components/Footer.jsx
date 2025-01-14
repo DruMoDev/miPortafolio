@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-quinary text-white w-full mt-10">
       <div className="max-w-[1000px] px-10 mx-auto py-4 flex flex-col-reverse md:flex-row items-center justify-between container gap-1">
         <span className="text-xs xl:text-base text-center dark:text-gray-400">
-          © {new Date().getFullYear().toString()} Roger Morera |{" "}
+          © {new Date().getFullYear().toString()} Dru Morera |{" "}
           {t("footer.copyright")}
         </span>
         <ul className="flex flex-wrap items-center justify-center text-center gap-3 xl:mt-3 text-xs xl:text-base font-medium  dark:text-gray-400 mt-0">

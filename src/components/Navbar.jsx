@@ -2,11 +2,15 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import usePortafolio from "../hooks/usePortafolio";
+import { Globe } from "lucide-react";
+import LanguageToggleMenu from "./language-toggle-menu";
+import i18n from "../i18next";
 
 const Navbar = () => {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const { isDivVisible, setIsDivVisible } = usePortafolio();
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,7 +69,7 @@ const Navbar = () => {
           ? "bg-quinary border-black border-b"
           : "bg-transparent border-b border-transparent "
       } transition-background-color duration-300 ease-in-out `}>
-      <nav className="flex justify-around max-w-[1000px] px-10 container mx-auto  items-center py-5  font-bold">
+      <nav className="flex justify-around max-w-[1000px] px-10 container mx-auto  items-center py-5  font-bold uppercase">
         <Link
           className={` py-1 my-auto rounded transition-all duration-300 text-center justify-center flex ${
             isDivVisible === "aboutMe"
@@ -97,11 +101,20 @@ const Navbar = () => {
         </Link>
 
         <a
-          download={"Roger-Morera-CV-ES.pdf"}
-          href="Roger-Morera-CV-ES.pdf"
-          className="bg-quaternary rounded px-2 md:px-5 lg:px-10 text-primary py-0.5 my-auto border-primary border-2 font-bold hover:bg-primary hover:text-quaternary transition-all duration-300 hover:border-quaternary">
+          download={`Roger_Morera_CV_${i18n.language}.pdf`}
+          href={`/cv/Roger_Morera_CV_${i18n.language}.pdf`}
+          className="bg-primary/20 rounded-3xl px-2 md:px-5 lg:px-10 text-primary py-0.5 my-auto  font-bold hover:bg-primary/50 hover:text-white transition-all duration-300 hover:border-quaternary">
           {t("navbar.cv")}
         </a>
+
+        <button
+          onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
+          className="relative">
+          <Globe />
+          {isLanguageMenuOpen && (
+            <LanguageToggleMenu setIsLanguageMenuOpen={setIsLanguageMenuOpen} />
+          )}
+        </button>
       </nav>
     </header>
   );

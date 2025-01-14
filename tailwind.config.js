@@ -12,7 +12,7 @@ export default {
       },
       colors: {
         primary: "#006AFF",
-        secondary: "#adadad",
+        secondary: "#f4f4f4",
         tertiary: "#0B0B0B",
         quaternary: "#0f0f0f",
         quinary: "#15151D", //Color del Navbar

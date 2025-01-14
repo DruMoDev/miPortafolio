@@ -14,7 +14,7 @@ const AboutMe = () => {
         {t("aboutMe.title-3")}
       </h1>
 
-      <div className="py-3 lg:py-2 px-4 mt-10 rounded-full bg-secondary/[0.08] max-w-[80%]">
+      <div className="py-3 lg:py-2 px-4 mt-10 rounded-full bg-slate-500/[0.08] max-w-[80%]">
         <p className="px-2 tracking-tight text-center bg-animated-gift w-fit">
           {t("aboutMe.subtitle")}
         </p>
