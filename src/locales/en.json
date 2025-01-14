@@ -1,14 +1,14 @@
-{"metadata": {
-  "title": "Dru Morera - Full Stack Web Developer in Barcelona",
-  "description": "Web developer specialized in developing modern and scalable web applications.",
-  "keywords": "web developer, full stack, web development, web applications, front end, back end, react, Barcelona, Spain"
-},
+{
+  "metadata": {
+    "title": "Dru Morera - Full Stack Web Developer in Barcelona",
+    "description": "Web developer specialized in developing modern and scalable web applications.",
+    "keywords": "web developer, full stack, web development, web applications, front end, back end, react, Barcelona, Spain"
+  },
   "aboutMe": {
     "title-1": "Full Stack",
     "title-2": "Web\n",
     "title-3": "Developer",
-    "subtitle": "Development isn’t just about code; it’s about solving problems with creativity.",
-    "technologies": "These are the technologies I have worked with"
+    "subtitle": "Development isn’t just about code; it’s about solving problems with creativity."
   },
   "navbar": {
     "aboutMe": "About Me",

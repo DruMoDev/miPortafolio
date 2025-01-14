@@ -1,14 +1,14 @@
-{"metadata": {
-  "title": "Dru Morera - Programador y Desarrollador Web Full Stack en Barcelona",
-  "description": "Programador y desarrollador web especializado en desarrollar aplicaciones web modernas y escalables.",
-  "keywords": "programador web, full stack, desarrollo web, aplicaciones web, front end, back end, react, Barcelona, España"
-},
+{
+  "metadata": {
+    "title": "Dru Morera - Programador y Desarrollador Web Full Stack en Barcelona",
+    "description": "Programador y desarrollador web especializado en desarrollar aplicaciones web modernas y escalables.",
+    "keywords": "programador web, full stack, desarrollo web, aplicaciones web, front end, back end, react, Barcelona, España"
+  },
   "aboutMe": {
     "title-1": "Desarrollador ",
     "title-2": "Web\n",
     "title-3": "Full Stack",
-    "subtitle": "El desarrollo no se trata solo de código, se trata de resolver problemas con creatividad.",
-    "technologies": "Estas son las tecnologias con las que he trabajado"
+    "subtitle": "El desarrollo no se trata solo de código, se trata de resolver problemas con creatividad."
   },
   "navbar": {
     "aboutMe": "Sobre mí",

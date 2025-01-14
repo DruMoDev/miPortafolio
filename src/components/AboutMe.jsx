@@ -20,10 +20,6 @@ const AboutMe = () => {
         </p>
       </div>
 
-      <p className="my-10 text-xs text-center text-secondary lg:hidden">
-        {t("aboutMe.technologies")}
-      </p>
-
       <div className=" lg:mt-36">
         <CarouselPrueba />
       </div>
