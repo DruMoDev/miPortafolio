@@ -82,9 +82,7 @@ const Contacto = () => {
             className="bg-[#f4f4f4] block rounded mt-1 w-full text-black px-3 py-2 active:ring ring-primary focus:ring outline-none placeholder:text-slate-500"></textarea>
         </label>
 
-        <button
-          type="submit"
-          className="bg-primary text-white py-2 px-10 w-fit md:px-20 md:py-3 self-center rounded  font-semibold tracking-wider hover:bg-primary-dark transition-all">
+        <button type="submit" className="btn btn--primary">
           {t("contact.submit")} {/* Usar traducción */}
         </button>
       </form>

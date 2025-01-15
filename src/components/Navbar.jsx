@@ -90,8 +90,8 @@ const Navbar = () => {
               key={link.id}
               className={`transition-all ease-in hover:text-primary ${
                 isDivVisible === link.id
-                  ? "font-bold scale-110 border-b"
-                  : ""
+                  ? "font-bold scale-110 text-white"
+                  : " text-white-dark"
               }`}>
               <Link to={`#${link.id}`}>{link.text}</Link>
             </li>

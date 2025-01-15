@@ -47,9 +47,17 @@ p {
 }
 
 .container {
-  @apply max-w-5xl lg:max-w-7xl mx-auto px-4 w-full;
+  @apply max-w-5xl  mx-auto px-4 w-full;
 }
 
 .title--2 {
-  @apply text-pretty text-center bg-gradient-custom bg-clip-text justify-center text-5xl uppercase font-semibold md:text-7xl text-transparent p-2 mb-10 md:text-left w-fit;
+  @apply mx-auto text-pretty text-center bg-gradient-custom bg-clip-text justify-center text-5xl uppercase font-semibold md:text-7xl text-transparent p-2 mb-10 md:text-left w-fit;
+}
+
+.btn {
+  @apply text-base rounded-lg py-3 px-7 md:px-12 transition-all md:text-xl
+}
+
+.btn--primary {
+  @apply bg-primary hover:bg-primary-dark text-white;
 }
