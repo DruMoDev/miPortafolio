@@ -4,13 +4,15 @@ import { useTranslation } from "react-i18next";
 import usePortafolio from "../hooks/usePortafolio";
 import LanguageToggleMenu from "./language-toggle-menu";
 import i18n from "../i18next";
-import { Menu } from "lucide-react";
+import { Menu, Sparkles } from "lucide-react";
+import SplashCursor from "./ui/splash-cursor";
 
 const Navbar = () => {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const { isDivVisible, setIsDivVisible } = usePortafolio();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,43 +71,55 @@ const Navbar = () => {
   ];
 
   return (
-    <header
-      className={`w-full fixed pr-3 md:pr-0 top-0 border-b transition-background-color duration-300 ease-in-out h-14 md:h-20 z-[9999] ${
-        scrolled
-          ? "bg-quinary border-black"
-          : "bg-transparent border-transparent"
-      }`}>
-      <nav className="container flex flex-row-reverse items-center h-full gap-5 md:flex-row md:justify-center md:gap-14 uppercase">
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden z-[9999]">
-          <Menu className="size-6" />
-        </button>
-        <ul
-          className={`absolute top-0  w-full h-screen z-50 flex flex-col pt-44 items-center gap-10 text-2xl bg-quinary transition-all duration-500 ease-in-out md:static md:h-full md:flex-row md:text-base md:pt-0  md:justify-center md:bg-transparent md:w-fit md:gap-14 ${
-            isMobileMenuOpen ? "right-0" : "right-full"
-          }`}>
-          {NAVBAR_LINKS.map((link) => (
-            <li
-              key={link.id}
-              className={`transition-all ease-in hover:text-primary ${
-                isDivVisible === link.id
-                  ? "font-bold scale-110 text-white"
-                  : " text-white-dark"
-              }`}>
-              <Link to={`#${link.id}`}>{link.text}</Link>
-            </li>
-          ))}
-          <a
-            download={`Roger_Morera_CV_${i18n.language}.pdf`}
-            href={`/cv/Roger_Morera_CV_${i18n.language}.pdf`}
-            className="bg-primary/20 rounded-3xl px-5 text-primary py-2 font-bold hover:bg-primary/50 hover:text-white transition-all duration-300 hover:border-quaternary">
-            {t("navbar.cv")}
-          </a>
-        </ul>
-        <LanguageToggleMenu />
-      </nav>
-    </header>
+    <>
+      {showCursor && <SplashCursor />}
+      <header
+        className={`w-full fixed pr-3 md:pr-0 top-0 border-b transition-background-color duration-300 ease-in-out h-14 md:h-20 z-[9999] ${
+          scrolled
+            ? "bg-quinary border-black"
+            : "bg-transparent border-transparent"
+        }`}>
+        <nav className="container flex flex-row-reverse items-center h-full gap-5 md:flex-row md:justify-center md:gap-14 uppercase">
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden z-[9999]">
+            <Menu className="size-6" />
+          </button>
+          <ul
+            className={`absolute top-0  w-full h-screen z-50 flex flex-col pt-44 items-center gap-10 text-2xl bg-quinary transition-all duration-500 ease-in-out md:static md:h-full md:flex-row md:text-base md:pt-0  md:justify-center md:bg-transparent md:w-fit md:gap-14 ${
+              isMobileMenuOpen ? "right-0" : "right-full"
+            }`}>
+            {NAVBAR_LINKS.map((link) => (
+              <li
+                key={link.id}
+                className={`transition-all ease-in hover:text-primary ${
+                  isDivVisible === link.id
+                    ? "font-bold scale-110 text-white"
+                    : " text-white-dark"
+                }`}>
+                <Link to={`#${link.id}`}>{link.text}</Link>
+              </li>
+            ))}
+            <a
+              download={`Roger_Morera_CV_${i18n.language}.pdf`}
+              href={`/cv/Roger_Morera_CV_${i18n.language}.pdf`}
+              className="bg-primary/20 rounded-3xl px-5 text-primary py-2 font-bold hover:bg-primary/50 hover:text-white transition-all duration-300 hover:border-quaternary">
+              {t("navbar.cv")}
+            </a>
+          </ul>
+          <div className="flex gap-3">
+            <button onClick={() => setShowCursor(!showCursor)}>
+              <Sparkles
+                className={`size-5 ${
+                  showCursor ? "text-purple-300" : "text-purple-300/40"
+                }`}
+              />
+            </button>
+            <LanguageToggleMenu />
+          </div>
+        </nav>
+      </header>
+    </>
   );
 };
 
