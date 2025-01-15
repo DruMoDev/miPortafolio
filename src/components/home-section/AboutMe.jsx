@@ -10,7 +10,7 @@ const AboutMe = () => {
     <section
       id="aboutMe"
       className="flex flex-col items-center min-h-screen mx-auto justify-center gap-y-5 container">
-      <h1 className="font-semibold text-center text-pretty">
+      <h1 className="font-semibold text-center text-nowrap">
         {t("aboutMe.title-1")}<br/>
         <span className="px-1 bg-animated-gift">{t("aboutMe.title-2")}</span>
         {t("aboutMe.title-3")}
@@ -26,7 +26,7 @@ const AboutMe = () => {
         <CarouselPrueba />
       </div> */}
 
-      <div className="w-1/2 md:w-3/5 h-[300px] flex flex-col relative">
+      <div className="w-1/2 md:w-3/5 h-[200px] md:h-[300px] flex flex-col relative">
         <Gravity gravity={{ x: 0, y: 1 }} className="w-full h-full z-10">
           {carrouselCardDetails.map((card, index) => (
             <MatterBody

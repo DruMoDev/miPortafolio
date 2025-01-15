@@ -50,6 +50,6 @@ p {
   @apply max-w-5xl lg:max-w-7xl mx-auto px-4 w-full;
 }
 
-.title {
+.title--2 {
   @apply text-pretty text-center bg-gradient-custom bg-clip-text justify-center text-5xl uppercase font-semibold md:text-7xl text-transparent p-2 mb-10 md:text-left w-fit;
 }

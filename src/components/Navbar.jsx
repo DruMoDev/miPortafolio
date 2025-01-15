@@ -70,12 +70,12 @@ const Navbar = () => {
 
   return (
     <header
-      className={`w-full fixed top-0 border-b transition-background-color duration-300 ease-in-out h-14 md:h-20 z-[9999] ${
+      className={`w-full fixed pr-3 md:pr-0 top-0 border-b transition-background-color duration-300 ease-in-out h-14 md:h-20 z-[9999] ${
         scrolled
           ? "bg-quinary border-black"
           : "bg-transparent border-transparent"
       }`}>
-      <nav className="container flex flex-row-reverse items-center h-full gap-3 md:flex-row md:justify-center md:gap-14 uppercase">
+      <nav className="container flex flex-row-reverse items-center h-full gap-5 md:flex-row md:justify-center md:gap-14 uppercase">
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="md:hidden z-[9999]">

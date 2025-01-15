@@ -5,7 +5,6 @@ export default function LanguageToggleMenu() {
     i18n.changeLanguage(lng);
   };
   const currentLanguage = i18n.language;
-  console.log({ currentLanguage });
 
   return (
     <button
