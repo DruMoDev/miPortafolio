@@ -70,11 +70,15 @@ const SingleProjectPage = ({ proyecto }) => {
               </h2>
 
               <div className="mt-4 grid grid-cols-2 gap-4 ">
-              {tecnologias.map((tecnologia, index) => {
+                {tecnologias.map((tecnologia, index) => {
                   const Icono = iconsMap[tecnologia.icon];
                   return (
                     <div key={index} className="flex items-center gap-2">
-                      {Icono ? <Icono size={24} /> : <span>Icono no disponible</span>}
+                      {Icono ? (
+                        <Icono size={24} />
+                      ) : (
+                        <span>Icono no disponible</span>
+                      )}
                       <span>{tecnologia.name}</span>
                     </div>
                   );

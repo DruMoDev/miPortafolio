@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import usePortafolio from "../hooks/usePortafolio";
 import { useEffect } from "react";
 import { PROYECTOS } from "../db/PROYECTOS";
-import SingleProjectPage from "../components/proyectos/SingleProjectPage";
+import SingleProjectPage from "../components/projects-section/SingleProjectPage";
 
 const ProyectoPage = () => {
   const { id } = useParams();

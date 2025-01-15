@@ -9,15 +9,15 @@ const AboutMe = () => {
   return (
     <section
       id="aboutMe"
-      className="flex flex-col items-center min-h-screen mx-auto justify-center gap-y-5">
-      <h1 className="font-semibold text-center">
-        {t("aboutMe.title-1")}
+      className="flex flex-col items-center min-h-screen mx-auto justify-center gap-y-5 container">
+      <h1 className="font-semibold text-center text-pretty">
+        {t("aboutMe.title-1")}<br/>
         <span className="px-1 bg-animated-gift">{t("aboutMe.title-2")}</span>
         {t("aboutMe.title-3")}
       </h1>
 
-      <div className="py-3 lg:py-2 px-4 mt-10 rounded-full bg-slate-500/[0.08] max-w-[80%]">
-        <p className="px-2 tracking-tight text-center bg-animated-gift w-fit">
+      <div className="py-3 lg:py-2 mt-10 rounded-full md:bg-slate-500/[0.08] max-w-[80%] md:px-4">
+        <p className="text-center bg-animated-gift w-fit md:px-2 md:py-1">
           {t("aboutMe.subtitle")}
         </p>
       </div>
@@ -26,10 +26,8 @@ const AboutMe = () => {
         <CarouselPrueba />
       </div> */}
 
-      <div className="w-full h-[300px] flex flex-col relative">
-        <Gravity
-          gravity={{ x: 0, y: 1 }}
-          className="w-full h-full z-10">
+      <div className="w-1/2 md:w-3/5 h-[300px] flex flex-col relative">
+        <Gravity gravity={{ x: 0, y: 1 }} className="w-full h-full z-10">
           {carrouselCardDetails.map((card, index) => (
             <MatterBody
               key={index}
@@ -43,7 +41,7 @@ const AboutMe = () => {
               <img
                 src={card.imgUrl}
                 alt={card.title}
-                className="w-16 h-16"
+                className="md:size-16 size-7"
               />
             </MatterBody>
           ))}

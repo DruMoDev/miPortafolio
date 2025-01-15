@@ -2,15 +2,15 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import usePortafolio from "../hooks/usePortafolio";
-import { Globe } from "lucide-react";
 import LanguageToggleMenu from "./language-toggle-menu";
 import i18n from "../i18next";
+import { Menu } from "lucide-react";
 
 const Navbar = () => {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const { isDivVisible, setIsDivVisible } = usePortafolio();
-  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,59 +62,48 @@ const Navbar = () => {
     };
   }, []);
 
+  const NAVBAR_LINKS = [
+    { id: "aboutMe", text: t("navbar.aboutMe") },
+    { id: "misProyectos", text: t("navbar.projects") },
+    { id: "contacto", text: t("navbar.contact") },
+  ];
+
   return (
     <header
-      className={`w-full fixed top-0 z-50 ${
+      className={`w-full fixed top-0 border-b transition-background-color duration-300 ease-in-out h-14 md:h-20 z-[9999] ${
         scrolled
-          ? "bg-quinary border-black border-b"
-          : "bg-transparent border-b border-transparent "
-      } transition-background-color duration-300 ease-in-out `}>
-      <nav className="flex justify-around max-w-[1000px] px-10 container mx-auto  items-center py-5  font-bold uppercase">
-        <Link
-          className={` py-1 my-auto rounded transition-all duration-300 text-center justify-center flex ${
-            isDivVisible === "aboutMe"
-              ? "text-primary hover:text-primary hover:underline underline-offset-8"
-              : "hover:underline underline-offset-8"
-          }`}
-          to="/#aboutMe">
-          {t("navbar.aboutMe")}
-        </Link>
-
-        <Link
-          className={`rounded py-1 my-auto transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
-            isDivVisible === "misProyectos"
-              ? "text-primary hover:text-primary hover:underline underline-offset-8"
-              : "hover:underline underline-offset-8"
-          }`}
-          to="/#misProyectos">
-          {t("navbar.projects")}
-        </Link>
-
-        <Link
-          className={`py-1 my-auto rounded transition-all duration-300 lg:w-[100px] w-[70px] text-center ${
-            isDivVisible === "contacto"
-              ? "text-primary hover:text-primary hover:underline underline-offset-8"
-              : " hover:underline underline-offset-8"
-          }`}
-          to="/#contacto">
-          {t("navbar.contact")}
-        </Link>
-
-        <a
-          download={`Roger_Morera_CV_${i18n.language}.pdf`}
-          href={`/cv/Roger_Morera_CV_${i18n.language}.pdf`}
-          className="bg-primary/20 rounded-3xl px-2 md:px-5 lg:px-10 text-primary py-0.5 my-auto  font-bold hover:bg-primary/50 hover:text-white transition-all duration-300 hover:border-quaternary">
-          {t("navbar.cv")}
-        </a>
-
+          ? "bg-quinary border-black"
+          : "bg-transparent border-transparent"
+      }`}>
+      <nav className="container flex flex-row-reverse items-center h-full gap-3 md:flex-row md:justify-center md:gap-14 uppercase">
         <button
-          onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
-          className="relative">
-          <Globe />
-          {isLanguageMenuOpen && (
-            <LanguageToggleMenu setIsLanguageMenuOpen={setIsLanguageMenuOpen} />
-          )}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="md:hidden z-[9999]">
+          <Menu className="size-6" />
         </button>
+        <ul
+          className={`absolute top-0  w-full h-screen z-50 flex flex-col pt-44 items-center gap-10 text-2xl bg-quinary transition-all duration-500 ease-in-out md:static md:h-full md:flex-row md:text-base md:pt-0  md:justify-center md:bg-transparent md:w-fit md:gap-14 ${
+            isMobileMenuOpen ? "right-0" : "right-full"
+          }`}>
+          {NAVBAR_LINKS.map((link) => (
+            <li
+              key={link.id}
+              className={`transition-all ease-in hover:text-primary ${
+                isDivVisible === link.id
+                  ? "font-bold scale-110 border-b"
+                  : ""
+              }`}>
+              <Link to={`#${link.id}`}>{link.text}</Link>
+            </li>
+          ))}
+          <a
+            download={`Roger_Morera_CV_${i18n.language}.pdf`}
+            href={`/cv/Roger_Morera_CV_${i18n.language}.pdf`}
+            className="bg-primary/20 rounded-3xl px-5 text-primary py-2 font-bold hover:bg-primary/50 hover:text-white transition-all duration-300 hover:border-quaternary">
+            {t("navbar.cv")}
+          </a>
+        </ul>
+        <LanguageToggleMenu />
       </nav>
     </header>
   );

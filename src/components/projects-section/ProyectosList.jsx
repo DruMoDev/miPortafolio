@@ -14,7 +14,7 @@ const ProyectosList = () => {
     if (showAll) {
       setProyectos(t("projectsContent", { returnObjects: true }).slice(0, 3));
       setShowAll(!showAll);
-      return
+      return;
     }
     setProyectos(t("projectsContent", { returnObjects: true }));
     setShowAll(!showAll);

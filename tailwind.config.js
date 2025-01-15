@@ -8,8 +8,7 @@ export default {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "gradient-custom":
-          "linear-gradient(to right, #006AFF, #0087FF, #009AF5, #FAFAFA)",
+        "gradient-custom": "linear-gradient(to right, #006aff, #e0f2ff)",
       },
       colors: {
         primary: "#006AFF",

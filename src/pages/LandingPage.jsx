@@ -1,14 +1,14 @@
 import AboutMe from "../components/home-section/AboutMe";
 import Contacto from "../components/Contacto";
-import MisProyectos from "../components/proyectos/MisProyectos";
+import MisProyectos from "@/components/projects-section/MisProyectos";
 
 const LandingPage = () => {
   return (
-    <main className="max-w-[1024px]">
+    <>
       <AboutMe />
       <MisProyectos />
       <Contacto />
-    </main>
+    </>
   );
 };
 export default LandingPage;
