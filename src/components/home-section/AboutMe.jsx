@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import CarouselPrueba from "../CarouselPrueba";
-import Gravity, { MatterBody } from "../fancy/gravity";
+/* import CarouselPrueba from "../CarouselPrueba";
+ */import Gravity, { MatterBody } from "../fancy/gravity";
 import carrouselCardDetails from "../../db/carrouselCardDetails";
 
 const AboutMe = () => {

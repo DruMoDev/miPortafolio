@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "ClashDisplay-regular";
-  src: url("./assets/fonts/ClashDisplay-Regular.woff2") format("woff2"),
+  src: url("/fonts/ClashDisplay-Regular.woff2") format("woff2"),
     format("truetype");
   font-weight: 400;
   font-display: swap;
