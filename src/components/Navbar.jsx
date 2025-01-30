@@ -4,15 +4,13 @@ import { useTranslation } from "react-i18next";
 import usePortafolio from "../hooks/usePortafolio";
 import LanguageToggleMenu from "./language-toggle-menu";
 import i18n from "../i18next";
-import { Menu, Sparkles } from "lucide-react";
-import SplashCursor from "./ui/splash-cursor";
+import { Menu } from "lucide-react";
 
 const Navbar = () => {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const { isDivVisible, setIsDivVisible } = usePortafolio();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -72,9 +70,8 @@ const Navbar = () => {
 
   return (
     <>
-      {showCursor && <SplashCursor />}
       <header
-        className={`w-full fixed pr-3 md:pr-0 top-0 border-b transition-background-color duration-300 ease-in-out h-14 md:h-20 z-[9999] ${
+        className={`w-full sticky pr-3 md:pr-0 top-0 border-b transition-background-color duration-300 ease-in-out h-14 md:h-20 z-[9999] ${
           scrolled
             ? "bg-quinary border-black"
             : "bg-transparent border-transparent"
@@ -108,13 +105,7 @@ const Navbar = () => {
             </a>
           </ul>
           <div className="flex gap-3">
-            <button onClick={() => setShowCursor(!showCursor)}>
-              <Sparkles
-                className={`size-5 ${
-                  showCursor ? "text-purple-300" : "text-purple-300/40"
-                }`}
-              />
-            </button>
+            
             <LanguageToggleMenu />
           </div>
         </nav>
